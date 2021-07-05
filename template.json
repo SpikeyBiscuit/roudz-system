@@ -1,0 +1,91 @@
+{
+"Actor": {
+    "types": ["pc", "npc"],
+    "templates": {
+      "attributes": {
+        "agility": {
+          "value": 10
+        },
+        "dexterity": {
+          "value": 10
+        },
+        "constitution": {
+          "value": 10
+        },
+        "strength": {
+          "value": 10
+        },
+        "intelligence": {
+          "value": 10
+        },
+        "wisdom": {
+          "value": 10
+        },
+        "will": {
+          "value": 10
+        },
+        "insight": {
+          "value": 10
+        },
+        "charisma": {
+          "value": 10
+        },
+        "luck": {
+          "value": 10
+        }
+      },
+      "background": {
+        "biography": "",
+        "hairColor": "blue"
+      },
+      "resources": {
+        "vitality": {
+          "min": 0,
+          "value": 10,
+          "max": 10
+        },
+        "morale": {
+          "min": 0,
+          "value": 10,
+          "max": 10
+        },
+        "stamina": {
+          "min": 0,
+          "value": 10,
+          "max": 10
+        },
+        "spirit": {
+          "min": 0,
+          "value": 10,
+          "max": 10
+      }
+    },
+    "pc": {
+      "templates": ["background", "resources"],
+      "goodness": {
+        "value": 5,
+        "max": 10
+      }
+    },
+    "npc": {
+      "templates": ["resources"]
+    }
+  },
+  "Item": {
+    "types": ["weapon", "spell"],
+    "templates": {
+      "rarity": {
+        "rarity": "Common",
+        "price": 20
+      }
+    },
+    "weapon": {
+      "templates": ["rarity"],
+      "damage": 5
+    },
+    "spell": {
+      "templates": ["rarity"],
+      "cost": 2
+    }
+  }
+  }
