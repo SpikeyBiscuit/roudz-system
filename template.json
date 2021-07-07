@@ -1,6 +1,6 @@
 {
 "Actor": {
-    "types": ["pc", "npc"],
+    "types": ["pc", "npc", "mob"],
     "templates": {
       "attributes": {
         "agility": {
@@ -34,9 +34,12 @@
           "value": 10
         }
       },
-      "background": {
-        "biography": "",
-        "hairColor": "blue"
+      "biography": {
+        "summary": "",
+        "height": "1.5",
+        "weight":"",
+        "name":"",
+        "alignment":""
       },
       "resources": {
         "vitality": {
@@ -58,17 +61,26 @@
           "min": 0,
           "value": 10,
           "max": 10
+        },
+          "fortune": {
+            "min": 0,
+            "value": 10,
+            "max": 10
       }
     },
     "pc": {
-      "templates": ["background", "resources"],
+      "templates": ["attributes","biography", "resources"],
       "goodness": {
         "value": 5,
         "max": 10
-      }
+      },
+      "owner":""
     },
     "npc": {
-      "templates": ["resources"]
+      "templates": ["attributes","biography","resources"]
+    },
+    "mob": {
+      "templates":["attributes","resources"]
     }
   },
   "Item": {

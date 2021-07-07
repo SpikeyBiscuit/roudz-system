@@ -11,7 +11,7 @@
       "scripts/system-script-2.js"
     ],
     "esmodules": [
-      "scripts/system-module-1.mjs"
+      "scripts/roudz-module.mjs"
     ],
     "styles": [
       "styles/system-styles-1.css",
