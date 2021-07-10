@@ -1,52 +1,28 @@
 {
-    "name": "roudz",
-    "title": "Roudz VTTRPG System",
-    "description": "An RPG just for VTTs, Roudz is both the setting for the system and the name of the game system. The main mechanic is rolling 1d20 against a target number and getting a threshold of success rather than a binary pass/fail to make roleplay more dynamic and interesting. It also focuses on resource management to succeed and therefore the system is great for dungeon crawling and exploration adventures.",
-    "version": "0.0.1",
-    "templateVersion": 2,
-    "author": "SpikeyBiscuit",
-    "minimumCoreVersion": "0.8.8",
-    "scripts": [
-      "scripts/system-script-1.js",
-      "scripts/system-script-2.js"
-    ],
-    "esmodules": [
-      "scripts/roudz-module.mjs"
-    ],
-    "styles": [
-      "styles/system-styles-1.css",
-      "styles/system-styles-2.css"
-    ],
-    "packs": [
-      {
-        "name": "monsters-1",
-        "label": "My Monsters 1",
-        "system": "roudz",
-        "module": "roudz",
-        "path": "packs/monsters-1.db",
-        "entity": "Actor"
-      },
-      {
-        "name": "items-1",
-        "label": "My Items 1",
-        "path": "packs/items-1.db",
-        "entity": "Item"
-      }
-    ],
-    "languages": [
-      {
-        "lang": "en",
-        "name": "English",
-        "path": "lang/en.json"
-      }
-    ],
-    "socket": false,
-    "initiative": "1d20",
-    "gridDistance": 1,
-    "gridUnits": "m",
-    "primaryTokenAttribute": "resources.vitality",
-    "secondaryTokenAttribute": "resources.guard",
-    "url": "https://your/hosted/system/repo/",
-    "manifest": "https://your/hosted/system/repo/system.json",
-    "download": "https://your/packaged/download/archive.zip"
-  }
+  "name": "roudz",
+  "title": "Roudz VTTRPG System",
+  "description": "An RPG just for VTTs. Main mechanics are thresholds of success and resource management. Roudz is the name of both the setting and the game system.",
+  "version": "0.0.1",
+  "minimumCoreVersion": "0.8.3",
+  "compatibleCoreVersion": "0.8.8",
+  "author": "SpikeyBiscuit",
+  "esmodules": ["module/roudz.mjs"],
+  "styles": ["css/roudz.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "health",
+  "secondaryTokenAttribute": "power",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}

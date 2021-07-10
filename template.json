@@ -1,103 +1,73 @@
 {
-"Actor": {
-    "types": ["pc", "npc", "mob"],
+  "Actor": {
+    "types": ["character", "npc"],
     "templates": {
-      "attributes": {
-        "agility": {
-          "value": 10
-        },
-        "dexterity": {
-          "value": 10
-        },
-        "constitution": {
-          "value": 10
-        },
-        "strength": {
-          "value": 10
-        },
-        "intelligence": {
-          "value": 10
-        },
-        "wisdom": {
-          "value": 10
-        },
-        "will": {
-          "value": 10
-        },
-        "insight": {
-          "value": 10
-        },
-        "charisma": {
-          "value": 10
-        },
-        "luck": {
-          "value": 10
-        }
-      },
-      "biography": {
-        "summary": "",
-        "height": "1.5",
-        "weight":"",
-        "name":"",
-        "alignment":""
-      },
-      "resources": {
-        "vitality": {
-          "min": 0,
+      "base": {
+        "health": {
           "value": 10,
+          "min": 0,
           "max": 10
         },
-        "morale": {
+        "power": {
+          "value": 5,
           "min": 0,
-          "value": 10,
-          "max": 10
+          "max": 5
         },
-        "stamina": {
-          "min": 0,
-          "value": 10,
-          "max": 10
-        },
-        "spirit": {
-          "min": 0,
-          "value": 10,
-          "max": 10
-        },
-          "fortune": {
-            "min": 0,
-            "value": 10,
-            "max": 10
+        "biography": ""
       }
     },
-    "pc": {
-      "templates": ["attributes","biography", "resources"],
-      "goodness": {
-        "value": 5,
-        "max": 10
+    "character": {
+      "templates": ["base"],
+      "attributes": {
+        "level": {
+          "value": 1
+        }
       },
-      "owner":""
+      "abilities": {
+        "str": {
+          "value": 10
+        },
+        "dex": {
+          "value": 10
+        },
+        "con": {
+          "value": 10
+        },
+        "int": {
+          "value": 10
+        },
+        "wis": {
+          "value": 10
+        },
+        "cha": {
+          "value": 10
+        }
+      }
     },
     "npc": {
-      "templates": ["attributes","biography","resources"]
-    },
-    "mob": {
-      "templates":["attributes","resources"]
+      "templates": ["base"],
+      "cr": 0
     }
   },
   "Item": {
-    "types": ["weapon", "spell"],
+    "types": ["item", "feature", "spell"],
     "templates": {
-      "rarity": {
-        "rarity": "Common",
-        "price": 20
+      "base": {
+        "description": ""
       }
     },
-    "weapon": {
-      "templates": ["rarity"],
-      "damage": 5
+    "item": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0,
+      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+    },
+    "feature": {
+      "templates": ["base"]
     },
     "spell": {
-      "templates": ["rarity"],
-      "cost": 2
+      "templates": ["base"],
+      "spellLevel": 1
     }
   }
-  }
+}
