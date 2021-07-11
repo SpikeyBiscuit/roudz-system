@@ -21,8 +21,8 @@
   "gridUnits": "m",
   "primaryTokenAttribute": "health",
   "secondaryTokenAttribute": "power",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/SpikeyBiscuit/roudz-system",
+  "manifest": "https://github.com/SpikeyBiscuit/roudz-system/blob/master/system.json",
+  "download": "https://github.com/SpikeyBiscuit/roudz-system.git",
   "license": "LICENSE.txt"
 }

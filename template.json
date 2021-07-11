@@ -1,6 +1,6 @@
 {
   "Actor": {
-    "types": ["character", "npc"],
+    "types": ["character", "npc", "mob"],
     "templates": {
       "base": {
         "health": {
@@ -18,28 +18,35 @@
     },
     "character": {
       "templates": ["base"],
-      "attributes": {
-        "level": {
-          "value": 1
-        }
-      },
-      "abilities": {
-        "str": {
+      "attribute": {
+        "agility": {
           "value": 10
         },
-        "dex": {
+        "dexterity": {
           "value": 10
         },
-        "con": {
+        "constitution": {
           "value": 10
         },
-        "int": {
+        "strength": {
           "value": 10
         },
-        "wis": {
+        "intelligence": {
           "value": 10
         },
-        "cha": {
+        "wisdom": {
+          "value": 10
+        },
+        "will": {
+          "value": 10
+        },
+        "insight": {
+          "value": 10
+        },
+        "charisma": {
+          "value": 10
+        },
+        "luck": {
           "value": 10
         }
       }
